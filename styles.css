@@ -149,8 +149,7 @@ nav li {
     margin: 0 4px;
 }
 
-nav a,
-a {
+nav a{
     padding: 5px 10px;
     text-decoration: none;
     color: white;
@@ -160,8 +159,7 @@ a {
     display: inline-block;
 }
 
-nav a:hover,
-a:hover {
+nav a:hover {
     background-color: orangered;
     transform: scale(1.1);
 }
@@ -295,38 +293,5 @@ footer {
 /* =========================
    Responsive Design
    ========================= */
-@media (max-width: 600px) {
-    .container {
-        padding-bottom: 20px;
-        border-radius: 16px;
-    }
-    .header {
-        flex-direction: column;
-        gap: 8px;
-    }
-    .header h1 {
-        font-size: 1.3em;
-    }
-    .profile-picture {
-        width: 40vw;
-        max-width: 100px;
-    }
-    .details {
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-    }
-    .details p {
-        margin-bottom: 5px;
-    }
-    .address, .phone-number, .email {
-        text-align: left;
-        font-size: 0.95em;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 4px;
-    }
-}
 
 
