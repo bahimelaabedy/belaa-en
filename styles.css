@@ -96,11 +96,7 @@ html {
     gap: 8px;
 }
 
-.address, .phone-number, .email {
-    min-width: 0;
-    word-break: break-word;
-    font-size: 1em;
-}
+
 
 .address {
     padding: 5px 10px;
@@ -111,7 +107,7 @@ html {
 }
 
 /* Flex layout for icon + text in contact details */
-.linkedin, .github, .home-address, .phone-call, .email {
+.linkedin, .github, .home-address, .phone-number, .email {
     display: flex;
     align-items: center;
 }
@@ -294,4 +290,36 @@ footer {
    Responsive Design
    ========================= */
 
-
+@media (max-width: 600px) {
+    .container {
+        padding-bottom: 20px;
+        border-radius: 16px;
+    }
+    .header {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .header h1 {
+        font-size: 1.3em;
+    }
+    .profile-picture {
+        width: 40vw;
+        max-width: 100px;
+    }
+    .details {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+    .details p {
+        margin-bottom: 5px;
+    }
+    .address, .phone-number, .email {
+        text-align: left;
+        font-size: 0.95em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
