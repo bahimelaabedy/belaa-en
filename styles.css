@@ -1,3 +1,13 @@
+/* Safari Flexbox Compatibility */
+.job-description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
 /* =========================
    Base Styles
    ========================= */
@@ -186,6 +196,13 @@ h4, .date, .company-name {
     text-decoration: underline;
 }
 
+.date-and-name {
+    margin-top: 0;
+}
+
+.degree {
+    margin-bottom: 2px;
+}
 /* =========================
    Job Description Styles
    ========================= */
@@ -239,6 +256,11 @@ footer {
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s;
+    will-change: transform, opacity;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 #up-button:hover {
@@ -275,7 +297,7 @@ footer {
    ========================= */
 @media (max-width: 600px) {
     .container {
-        padding-botton: 20px;
+        padding-bottom: 20px;
         border-radius: 16px;
     }
     .header {
